@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}
+    Home
+{% endblock title %}
+
+{% block content %}
+
+    <h1>Welcome To Home Page</h1>
+    <a href="{% url 'About' %}">About Page</a>
+    <a href="{% url 'AH' %}" class="btn btn-dark m-5" >Add Human</a>
+    <!-- {{ list }} -->
+    <div class="row mt-5">
+        {% for i in human %}
+            <div class="col-xxl-3 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{ i.profile_img.url }}" height="400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ i.full_name }}</h5>
+                        <p class="card-text">{{ i.info | slice:50 }}</p>
+                        <p class="card-text">{{ i.address }}</p>
+                        <small class="text-secondary">{{ i.add_time }}</small>
+                        <a href="{% url 'OPV' pk=i.pk %}" class="btn btn-primary">Ko'proq malumot</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock content %}
+
+<!-- 
+    django-admin startproject config . "Project yaratish uchun" 
+    python manage.py startapp app      "app yaratish"
+    python manage.py runserver         
+    "serverni yurgizish"
+-->

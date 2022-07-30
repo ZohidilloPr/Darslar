@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load django_bootstrap5 %}
+{% block title %}
+    Add Human
+{% endblock title %}
+
+{% block content %}
+<a href="{% url 'Home' %}" class="btn btn-dark m-5" >To Home</a>
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <input type="submit" class="btn btn-primary" value="Add Human">
+    </form>
+{% endblock content %}

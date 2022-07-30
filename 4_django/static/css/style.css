@@ -1,0 +1,32 @@
+h1{
+    font-weight: 700;
+    color: darkcyan;
+    margin-bottom: 0;
+    font-size: 70px !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h3{
+    font-size: 45px !important;
+}
+h4{
+    margin-top: 0;
+    color: darkcyan;
+}
+span{
+    color: gray;
+    margin-left: 25px;
+}
+p{
+    font-size: 18px;
+    margin-left: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.resume-img{
+    width: 200px;
+    height: 250px;
+}

@@ -1,0 +1,11 @@
+mkdir <papka nomi> == papka qoshish
+cd <papka nomi> === papkani ichiga kirish
+django-admin startproject config . === loyiha qoshish
+python manage.py startapp blog  === app qo'shish
+python manage.py runserver === serverni yurguzish
+python manage.py makemigrations === models.py ga o'zgartirish kiritlganda
+python manage.py migrate === "makemigrations" dan kiyin yoziladi
+python manage.py createsuperuser === superuser qo'shish
+
+
+

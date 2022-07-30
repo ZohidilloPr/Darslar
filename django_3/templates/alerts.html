@@ -1,0 +1,8 @@
+{% if messages %}
+    {% for ms in messages %}  
+        <div class="alert {{ ms.tags }} alert-dismissible fade show" role="alert">
+            {{ ms }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    {% endfor %}
+{% endif %}

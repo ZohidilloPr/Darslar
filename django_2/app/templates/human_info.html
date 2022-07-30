@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Human Info
+{% endblock %}
+
+{% block content %}
+    <img src="{{ object.profile_img.url }}" alt="">
+    <h1>{{ object }}</h1>
+    <h2>{{ object.info }}</h2>
+{% endblock content %}

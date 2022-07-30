@@ -1,0 +1,36 @@
+pip install virtualenv 
+virtualenv my_env
+source my_env/Scrtipts/activate
+
+
+pip install django==4.0.6
+
+django-admin startproject config .
+
+python manage.py startapp main
+
+pip freeze > requaremnst.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
